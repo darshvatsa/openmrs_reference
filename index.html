@@ -1,0 +1,159 @@
+<html>
+   <head>
+   	  <title>OpenMRS Standalone Application</title>
+   	  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+   	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   	  <link href="assets/favicon.png" rel="shortcut icon">
+   	  <style type="text/css">
+   	  	   body{
+   	  	   	margin: 0;
+   	  	   }
+   	  	   @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+   	  	   @font-face {
+            font-family: LuloClean;
+            src: url(assets/luloclean.ttf);
+           }
+   	  	   .header{
+   	  	   	 width: 20%;
+   	  	   	 height: 95.56%;
+   	  	     padding-top: 2vh;
+   	  	     padding-bottom: 2.5vh;
+   	  	     background-color: #2b2b2b;
+   	  	     float: left;
+   	  	   }
+   	  	   .content{
+   	  	   	float: left;
+   	  	   	height: 100%;
+   	  	   	width: 80%;
+   	  	   }
+   	  	   .logo{
+   	  	   	width:85%;
+   	  	   }
+   	  	   .b1{
+   	  	   	 width: 100%;
+   	  	   	 padding-top: 1.3vh;
+   	  	   	 padding-bottom: 1.3vh;
+   	  	   	 background-color: #ffffff;
+   	  	   	 border:none;
+   	  	   	 outline: none;
+   	  	   	 font-family: 'Montserrat', sans-serif;
+   	  	   	 font-weight: bold;
+   	  	   	 font-size: 1.9vh;
+   	  	   }
+   	  	   ul{
+   	  	   	margin-top: 7vh;
+   	  	   }
+   	  	   li{
+   	  	   	color:#ffffff;
+   	  	   	list-style-type:none;
+   	  	   	padding-top: 1vh;
+   	  	   	padding-bottom: 1vh;
+   	  	   	padding-left: 2vh;
+   	  	   	width: 100%;
+   	  	   	margin-left: -2vh;
+   	  	   	transition: 0.2s;
+   	  	   	font-family: LuloClean;
+   	  	   	font-weight: bold;
+   	  	   	font-size: 1.7vh;
+   	  	   }
+   	  	   li:hover{
+   	  	   	background-color:#5b57a6;
+   	  	   	cursor: pointer;
+   	  	   }
+   	  	   .active{
+   	  	   	background:#009384;
+   	  	   	color:#ffffff;
+   	  	   }
+   	  	   .logout{
+   	  	   	font-family: 'Montserrat', sans-serif;
+   	  	   	padding: 2vh;
+   	  	   	font-weight: bold;
+   	  	   	margin-top: 5vh;
+   	  	   	border:none;
+   	  	   	border-radius: 7px;
+   	  	   	border: 0.7vh solid #2b2b2b;
+   	  	   	transition: 0.2s;
+   	  	   	outline: none;
+   	  	   }
+   	  	   .logout:hover{
+   	  	   	border: 0.7vh solid #2a79ff;
+   	  	   	cursor: pointer;
+   	  	   }
+   	  	   .log{
+   	  	   	margin-top: 0.4vh;
+   	  	   }
+   	  	   .head{
+   	  	   	padding-left: 6vh;
+   	  	   	font-family: LuloClean;
+   	  	   	font-weight: bold;
+   	  	   }
+   	  	   .items{
+   	  	   	padding-left: 6vh;
+   	  	   }
+   	  	   .search{
+   	  	   	font-size: 15vh;
+   	  	   }
+   	  	   .b2{
+   	  	   	width:26vh;
+   	  	   	height:26vh;
+   	  	   	background-color: #ecebc8;
+   	  	   	border: none;
+   	  	   	font-family: 'Montserrat', sans-serif;
+   	  	   	border-radius: 2vh;
+   	  	   	outline: none;
+   	  	   	transition: 0.2s;
+   	  	   	float: left;
+   	  	   	margin-top: 7vh;
+   	  	   }
+   	  	   .b2:hover{
+   	  	   	cursor: pointer;
+   	  	   	background-color: #252525;
+   	  	   	color: #e2e2e2;
+   	  	   }
+   	  	   .text{
+   	  	   	font-weight: bold;
+   	  	   	font-size: 2.5vh;
+   	  	   }
+   	  	   .spaced{
+   	  	   	margin-left: 7vh;
+   	  	   }
+   	  </style>
+   </head>
+   <body>
+   	  <div class="header">
+   	  	 <center><div class="logo"><img src="assets/logo.png" class="logo"></div></center>
+   	  	 <br><br>
+   	  	 <div class="menu">
+   	  	 	 <button class="b1">admin</button>
+   	  	 	 <div class="menu_con">
+   	  	 	 	<ul>
+   	  	 	 		<li>My Account</li>
+   	  	 	 		<li>Inpatient ward</li>
+   	  	 	 		<li>Laboratory</li>
+   	  	 	 		<li>Pharmacy</li>
+   	  	 	 		<li>Isolation Ward</li>
+   	  	 	 		<li>Outpatient Clinic</li>
+   	  	 	 		<li class="active">Registration Desk</li>
+   	  	 	 	</ul>
+   	  	 	 	<br><br>
+   	  	 	 	<center><button class="Logout"><i class="material-icons">exit_to_app</i><div class="log">Logout</div></button></center>
+   	  	 	 </div>
+   	  	 </div>
+   	  </div>
+   	  <div class="content">
+   	  	<p class="head">Logged in as SuperUser() at Registration Desk</p>
+   	  	<br><br>
+   	  	<div class="items">
+   	  		<button class="b2"><i class="material-icons search">search</i><div class="text">Find Patient Record</div></button>
+   	  		<button class="b2 spaced"><i class="material-icons search">perm_contact_calendar</i><div class="text">Active Visits</div></button>
+   	  		<button class="b2 spaced"><i class="material-icons search">supervised_user_circle</i><div class="text">Register a patient</div></button>
+   	  		<button class="b2 spaced"><i class="material-icons search">insert_chart_outlined</i><div class="text">Capture Vitals</div></button>
+   	  		<button class="b2 spaced"><i class="material-icons search">calendar_today</i><div class="text">Appointment Scheduling</div></button>
+   	  		<button class="b2"><i class="material-icons search">assignment</i><div class="text">Reports</div></button>
+   	  		<button class="b2 spaced"><i class="material-icons search">dns</i><div class="text">Data Management</div></button>
+   	  		<button class="b2 spaced"><i class="material-icons search">desktop_windows</i><div class="text">Configure Metadata</div></button>
+   	  		<button class="b2 spaced"><i class="material-icons search">settings_applications</i><div class="text">System Administration</div></button>
+   	  	</div>
+   	  </div>
+   </body>
+</html>
